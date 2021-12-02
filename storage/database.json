@@ -1,0 +1,31 @@
+{ "text1": {
+    "author": "Autor 1",
+    "text": "In this week I have been working on our online project, I have been focused on studying
+    JavaScript and NodeJS because we decided to change the technologies used for backend because it could
+    be easier to be the same language for both, backend and frontend.
+    So considering this decision I started to study this language, during this week I learned how to run
+    code from a .js file using the command node, also I have been checking how the arrangements can be
+    manipulated, this includes commands like foreach, map or filter.
+    I knew that some of these commands can be used in Python so I got familiarized very easily, but
+    understanding that there are some differences. For example in the case of Python map is implemented
+    as a function where you define a function applied for each element and the list or data structure while
+    in javascript we use this utility as a method of an array.
+    In general map is used to implement a function for each element of an array, for example calculate the
+    square of each number stored in a list."
+    },
+    "text2" : {
+    "author": "Autor1",
+    "text": "During this week I had been working on my online project, I was studying about
+    JavaScript and NodeJS considering that the team decided to change the technologies used for backend
+    because it couldbe easier to be the same language for both, backend and frontend.
+    So considering this decision I started to study this language, during this week I learned how to run
+    code from a .js file using the command node, also I have been checking how the arrangements can be
+    manipulated, this includes commands like foreach, map or filter.
+    I had some idea about these commands can be used in Python so I got familiarized very easily, but
+    understanding that there are some differences. For instace in the case of Python map is implemented
+    as a function where you define a function applied for each element and the list or data structure while
+    in javascript we use this utility as a method of an array.
+    Normally the map method can be used to apply some change for each element of an array, for example calculate the
+    square of each number stored in a list."
+    }
+}
