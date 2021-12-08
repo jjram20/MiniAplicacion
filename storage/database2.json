@@ -1,4 +1,4 @@
 {
-    "saludo": "Hola",
-    "despedida": "Adios"
+    "greeting": "Morning",
+    "farewell": "Bye"
 }

@@ -1,5 +1,5 @@
 import express from 'express';
-import { readFile } from 'fs/promises';
+import { readFile, writeFile } from 'fs/promises';
 
 const app = express();
 
@@ -19,7 +19,17 @@ app.post('/json/:message', async (req, res) => {
     let jsonfilename = 'storage/database2.json';
     let jsoncontent = JSON.parse(await readFile(jsonfilename, 'utf8'));
     res.json(jsoncontent[message]);
-})
+});
+
+app.patch('/modificationGreeting/:greeting', async (req, res) => {
+    let newgreeting = req.params.greeting;
+    console.log(req.body);
+    let jsonfilename = 'storage/database2.json';
+    let jsoncontent = JSON.parse(await readFile(jsonfilename, 'utf8'));
+    jsoncontent['greeting'] = newgreeting;
+    await writeFile('storage/database2.json', JSON.stringify(jsoncontent, null, 4));
+    res.sendStatus(204);
+});
 
 app.listen(3000, () => {
     console.log('Aplicación en el puerto 3000');
